@@ -1,5 +1,5 @@
 /* =========================================================
-   Copyright (c) 2025 David Nguyen. All rights reserved.
+   Copyright (c) 2025–2026 David Nguyen. All rights reserved.
    Author: David Nguyen (nguyenvangialuan@gmail.com)
    Unauthorized copying or distribution is strictly prohibited.
    =========================================================
