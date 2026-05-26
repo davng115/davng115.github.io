@@ -1,0 +1,557 @@
+<!--
+  Copyright (c) 2025 David Nguyen. All rights reserved.
+  Author: David Nguyen (nguyenvangialuan@gmail.com)
+  Source: https://github.com/davng115
+  Unauthorized copying, reproduction, or distribution of this
+  code or design, in whole or in part, is strictly prohibited.
+-->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="David Nguyen" />
+  <meta name="copyright" content="Copyright (c) 2025 David Nguyen. All rights reserved." />
+  <meta name="description" content="David Nguyen — Back-end Developer & Quality Assurance. Building reliable, well-tested systems." />
+  <meta name="theme-color" content="#0a0a0a" />
+  <title>David Nguyen — Back-end Developer & QA</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Set theme before stylesheet renders to avoid a flash of the wrong theme -->
+  <script>
+    document.documentElement.setAttribute("data-theme", "dark");
+  </script>
+</head>
+<body>
+  <!-- Marble texture overlay (light theme only) -->
+  <div class="marble-bg" aria-hidden="true"></div>
+  <!-- Ambient background orbs -->
+  <div class="bg-orbs" aria-hidden="true">
+    <div class="bg-orb bg-orb--1"></div>
+    <div class="bg-orb bg-orb--2"></div>
+    <div class="bg-orb bg-orb--3"></div>
+  </div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+
+  <!-- Decorative side rails: left = scroll progress, right = rotated label -->
+  <aside class="rail rail--left" aria-hidden="true">
+    <div class="rail__line"></div>
+    <div class="rail__fill" id="rail-fill"></div>
+    <div class="rail__bullet" id="rail-bullet"></div>
+    <span class="rail__label rail__label--top">Top</span>
+    <span class="rail__label rail__label--bottom" id="rail-percent">0%</span>
+  </aside>
+  <!-- Section dot navigator -->
+  <nav class="section-nav" aria-label="Section navigation">
+    <a href="#work"    class="section-nav__item" data-section="work"    data-cursor="link"><span class="section-nav__dot"></span><span class="section-nav__label">01 Work</span></a>
+    <a href="#about"   class="section-nav__item" data-section="about"   data-cursor="link"><span class="section-nav__dot"></span><span class="section-nav__label">02 About</span></a>
+    <a href="#stack"   class="section-nav__item" data-section="stack"   data-cursor="link"><span class="section-nav__dot"></span><span class="section-nav__label">03 Stack</span></a>
+    <a href="#contact" class="section-nav__item" data-section="contact" data-cursor="link"><span class="section-nav__dot"></span><span class="section-nav__label">04 Contact</span></a>
+  </nav>
+
+  <header class="nav">
+    <a href="#top" class="nav__logo" data-cursor="link">
+      <span class="nav__logo-mark"></span>
+      <span class="nav__logo-text">David Nguyen</span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#work" data-cursor="link"><span class="nav__num">01</span> <span class="nav__label">Work</span></a>
+      <a href="#about" data-cursor="link"><span class="nav__num">02</span> <span class="nav__label">About</span></a>
+      <a href="#stack" data-cursor="link"><span class="nav__num">03</span> <span class="nav__label">Stack</span></a>
+      <a href="#contact" data-cursor="link"><span class="nav__num">04</span> <span class="nav__label">Contact</span></a>
+    </nav>
+    <div class="nav__actions">
+      <button class="nav__burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+      <button class="lang-toggle" type="button" aria-label="Toggle language" data-cursor="link">
+        <span class="lang-toggle__label">VI</span>
+      </button>
+      <button class="theme-toggle" type="button" aria-label="Toggle theme" data-cursor="link">
+        <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" fill="currentColor"/>
+        </svg>
+        <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4" fill="currentColor" stroke="none"/>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+        </svg>
+      </button>
+      <a href="#contact" class="nav__cta" data-cursor="link">
+        <span class="status-dot"></span>
+        <span class="nav__cta-text">Collaboration</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__meta" data-parallax="-0.08">
+        <span class="eyebrow">
+          <span class="eyebrow__dot"></span>
+          Portfolio
+        </span>
+        <span class="hero__location">Atlanta, GA</span>
+      </div>
+
+      <div class="hero__headline">
+        <figure class="hero__photo" data-animate="fade">
+          <img src="Photo/davidnguyen.png" alt="Portrait of David Nguyen" width="540" height="675" loading="eager" />
+          <span class="hero__photo-tag">
+            <span class="hero__photo-dot"></span>
+            David Nguyen
+          </span>
+        </figure>
+
+        <h1 class="hero__title">
+          <span class="line" data-animate="line">
+            <span class="hero__line-inner">Back‑end Developer <em>&amp;</em></span>
+          </span>
+          <span class="line" data-animate="line">
+            <span class="hero__line-inner">Quality Assurance</span>
+          </span>
+        </h1>
+      </div>
+
+      <div class="hero__bottom">
+        <div class="hero__ledes">
+          <p class="hero__lede" data-animate="fade">
+            I'm <strong>David Nguyen</strong> — a software developer focused on
+            <em>back‑end development, quality assurance, and reliable software
+            systems</em>. I build and test applications using <em>Java, Python</em>,
+            debugging, system integration, and clean object‑oriented design — with
+            a focus on catching <em>edge cases</em> and improving real‑world
+            behavior.
+          </p>
+
+          <p class="hero__lede" data-animate="fade">
+            I'm also interested in <em>practical AI applications</em>, including
+            machine learning, machine vision, and using AI tools to solve real
+            software problems.
+          </p>
+        </div>
+
+        <div class="hero__actions" data-animate="fade">
+          <a href="#work" class="btn btn--primary" data-cursor="link">
+            <span class="btn-text">See selected work</span>
+            <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.5" d="M3 11 11 3M5 3h6v6"/></svg>
+          </a>
+          <a href="#contact" class="btn btn--ghost" data-cursor="link"><span class="btn-text">Get in touch</span></a>
+        </div>
+      </div>
+
+      <a href="#work" class="hero__scroll" aria-label="Scroll to work" data-cursor="link">
+        <span class="hero__scroll-label">Scroll</span>
+        <span class="hero__scroll-line"></span>
+      </a>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee-wrap" data-parallax="0.06">
+      <span class="marquee__label">
+        <span class="marquee__label-dot"></span>
+        Highlights
+      </span>
+      <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span class="marquee__word">Back‑end Development</span>
+        <span class="marquee__sep">✦</span>
+        <span class="marquee__word">Quality Assurance</span>
+        <span class="marquee__sep">✦</span>
+        <span class="marquee__word">POS Integration</span>
+        <span class="marquee__sep">✦</span>
+        <span class="marquee__word">AI Projects</span>
+        <span class="marquee__sep">✦</span>
+        <span class="marquee__word">Software Testing</span>
+        <span class="marquee__sep">✦</span>
+        <span class="marquee__word">Java</span>
+        <span class="marquee__sep">✦</span>
+        <span class="marquee__word">Python</span>
+        <span class="marquee__sep">✦</span>
+        <!-- duplicate for seamless loop -->
+        <span class="marquee__word">Back‑end Development</span>
+        <span class="marquee__sep">✦</span>
+        <span class="marquee__word">Quality Assurance</span>
+        <span class="marquee__sep">✦</span>
+        <span class="marquee__word">POS Integration</span>
+        <span class="marquee__sep">✦</span>
+        <span class="marquee__word">AI Projects</span>
+        <span class="marquee__sep">✦</span>
+        <span class="marquee__word">Software Testing</span>
+        <span class="marquee__sep">✦</span>
+        <span class="marquee__word">Java</span>
+        <span class="marquee__sep">✦</span>
+        <span class="marquee__word">Python</span>
+        <span class="marquee__sep">✦</span>
+      </div>
+      </div>
+    </div>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- WORK -->
+    <section class="section" id="work">
+      <header class="section__head" data-parallax="-0.04">
+        <span class="section__num">01 — Selected Work</span>
+        <h2 class="section__title">Things I've <em>built</em> so far.</h2>
+        <p class="section__sub">A handful of projects from the last few years. Hover for details.</p>
+      </header>
+
+      <ul class="work">
+        <li class="work__item" data-animate="row">
+          <a href="https://sites.google.com/view/ys1-generative-ai-and-cyber/home" target="_blank" rel="noopener" class="work__link" data-cursor="view">
+            <span class="work__idx">01</span>
+            <span class="work__name">Generative&nbsp;AI&nbsp;&amp;&nbsp;Cybersecurity</span>
+            <span class="work__tags"><i>Python</i><i>LLMs</i><i>Hugging Face</i></span>
+            <span class="work__year">Fall 2025</span>
+            <span class="work__arrow" aria-hidden="true">↗</span>
+          </a>
+          <p class="work__desc">IEEE‑style research on LLM security &amp; defenses — six case studies on phishing detection, scam URL analysis, and secure code generation.
+            <span class="work__meta">
+              <span class="work__meta-row"><b>Role</b> Developer / Documentation Lead</span>
+              <span class="work__meta-row"><b>Focus</b> LLM security, AI defenses, secure code generation</span>
+            </span>
+          </p>
+        </li>
+        <li class="work__item" data-animate="row">
+          <a href="https://github.com/davng115/Pizza-Online-Ordering" target="_blank" rel="noopener" class="work__link" data-cursor="view">
+            <span class="work__idx">02</span>
+            <span class="work__name">Pizza&nbsp;Online&nbsp;Ordering</span>
+            <span class="work__tags"><i>Java</i><i>GUI</i><i>OOP</i></span>
+            <span class="work__year">Fall 2023</span>
+            <span class="work__arrow" aria-hidden="true">↗</span>
+          </a>
+          <p class="work__desc">Interactive Java ordering system with a full GUI — manages customers, orders, payments, receipts, and delivery addresses end‑to‑end.
+            <span class="work__meta">
+              <span class="work__meta-row"><b>Role</b> Developer</span>
+              <span class="work__meta-row"><b>Focus</b> Java, OOP, GUI, backend logic, data validation</span>
+            </span>
+          </p>
+        </li>
+        <li class="work__item" data-animate="row">
+          <a href="https://github.com/davng115/x86-Assembly-Language-Programming" target="_blank" rel="noopener" class="work__link" data-cursor="view">
+            <span class="work__idx">03</span>
+            <span class="work__name">x86&nbsp;Assembly&nbsp;Programs</span>
+            <span class="work__tags"><i>Assembly</i><i>x86</i><i>Systems</i></span>
+            <span class="work__year">Spring 2023</span>
+            <span class="work__arrow" aria-hidden="true">↗</span>
+          </a>
+          <p class="work__desc">Low‑level programs written in x86 assembly — practical exploration of registers, memory addressing, and control flow at the hardware level.
+            <span class="work__meta">
+              <span class="work__meta-row"><b>Role</b> Developer</span>
+              <span class="work__meta-row"><b>Focus</b> x86, low‑level systems, memory, control flow</span>
+            </span>
+          </p>
+        </li>
+        <li class="work__item" data-animate="row">
+          <a href="https://github.com/davng115/Dice-Battle" target="_blank" rel="noopener" class="work__link" data-cursor="view">
+            <span class="work__idx">04</span>
+            <span class="work__name">Dice&nbsp;Battle&nbsp;Game</span>
+            <span class="work__tags"><i>Java</i><i>OOP</i><i>Console</i></span>
+            <span class="work__year">Fall 2022</span>
+            <span class="work__arrow" aria-hidden="true">↗</span>
+          </a>
+          <p class="work__desc">Turn‑based Java console game — player vs. AI dice combat with difficulty scaling, player health, and randomized mechanics.
+            <span class="work__meta">
+              <span class="work__meta-row"><b>Role</b> Developer</span>
+              <span class="work__meta-row"><b>Focus</b> Java, OOP, game logic, AI behavior, testing</span>
+            </span>
+          </p>
+        </li>
+        <li class="work__item" data-animate="row">
+          <a href="https://github.com/davng115/Game-Project" target="_blank" rel="noopener" class="work__link" data-cursor="view">
+            <span class="work__idx">05</span>
+            <span class="work__name">Game&nbsp;Project</span>
+            <span class="work__tags"><i>Java</i><i>OOP</i><i>Game</i></span>
+            <span class="work__year">Spring 2022</span>
+            <span class="work__arrow" aria-hidden="true">↗</span>
+          </a>
+          <p class="work__desc">Java coursework game built end‑to‑end — early OOP project focused on class design, encapsulation, and game state management.
+            <span class="work__meta">
+              <span class="work__meta-row"><b>Role</b> Developer</span>
+              <span class="work__meta-row"><b>Focus</b> Java, OOP, class design, game state, QA</span>
+            </span>
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- ABOUT -->
+    <section class="section section--split" id="about">
+      <header class="section__head" data-parallax="-0.04">
+        <span class="section__num">02 — About</span>
+        <h2 class="section__title">A short <em>introduction</em>.</h2>
+      </header>
+
+      <div class="about">
+        <div class="about__body">
+          <p data-animate="fade">
+            <span class="para__gem" aria-hidden="true">◆</span>
+            I'm a Computer Science graduate from <strong>Kennesaw State University</strong>
+            with hands‑on experience in <em>Java application development, quality
+            assurance, POS system integration, and software testing</em>. I treat QA
+            as part of the development process — not an afterthought.
+          </p>
+          <p data-animate="fade">
+            <span class="para__gem" aria-hidden="true">◆</span>
+            My background includes diagnosing software issues, testing integrations
+            before release, identifying defects, and working with developers to improve
+            production software. I enjoy <em>solving problems, building reliable
+            systems</em>, and learning how technology can improve real‑world workflows.
+          </p>
+          <p data-animate="fade">
+            <span class="para__gem" aria-hidden="true">◆</span>
+            Outside of tech, I enjoy traveling, playing pickleball, spending time with
+            family, and exploring <em>AI‑powered trading tools</em>. I'm proactive,
+            team‑oriented, and always looking for ways to learn, improve, and bring
+            positive energy to the people I work with.
+          </p>
+        </div>
+
+        <aside class="about__side" data-parallax="-0.1">
+          <dl class="facts">
+            <div><dt>Status</dt><dd>Open to Software Developer / QA‑focused roles</dd></div>
+            <div><dt>Edu</dt><dd>B.S. Computer Science · KSU · Honors Scholar · 3.9 GPA</dd></div>
+            <div><dt>Focus</dt><dd>Back‑end Development · QA · AI · Java · Python</dd></div>
+            <div><dt>Location</dt><dd>Atlanta, GA</dd></div>
+          </dl>
+        </aside>
+      </div>
+
+      <div class="about-photos" data-animate="fade">
+        <figure class="about-photos__item about-photos__item--tall" data-cursor="view">
+          <img src="Photo/photo5.jpg" alt="KSU graduation portrait" loading="lazy" style="object-position: center 18%;" />
+        </figure>
+        <figure class="about-photos__item" data-cursor="view">
+          <img src="Photo/photo4.jpg" alt="KSU graduation with family" loading="lazy" style="object-position: center 80%;" />
+        </figure>
+        <figure class="about-photos__item" data-cursor="view">
+          <img src="Photo/photo3.jpg" alt="New York" loading="lazy" style="object-position: center 62%;" />
+        </figure>
+        <figure class="about-photos__item" data-cursor="view">
+          <img src="Photo/photo13.jpg" alt="Family" loading="lazy" />
+        </figure>
+        <figure class="about-photos__item" data-cursor="view">
+          <img src="Photo/photo10.jpg" alt="Lounge" loading="lazy" />
+        </figure>
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- STACK -->
+    <section class="section" id="stack">
+      <header class="section__head" data-parallax="-0.04">
+        <span class="section__num">03 — Stack</span>
+        <h2 class="section__title">Tools I <em>reach for</em>.</h2>
+      </header>
+
+      <div class="stack">
+        <div class="stack__col" data-animate="fade">
+          <h3>Languages</h3>
+          <ul>
+            <li style="--c:#f89820">Java</li>
+            <li style="--c:#3776ab">Python</li>
+            <li style="--c:#9b4f96">C#</li>
+            <li style="--c:#e34c26">HTML</li>
+            <li style="--c:#264de4">CSS</li>
+            <li style="--c:#f7df1e">JavaScript</li>
+          </ul>
+        </div>
+        <div class="stack__col" data-animate="fade">
+          <h3>Backend &amp; Database</h3>
+          <ul>
+            <li style="--c:#00758f">SQL</li>
+            <li style="--c:#0078D4">Azure Data Studio</li>
+            <li style="--c:#5d8a00">Application logic</li>
+            <li style="--c:#d4a017">Data validation</li>
+          </ul>
+        </div>
+        <div class="stack__col" data-animate="fade">
+          <h3>Concepts</h3>
+          <ul>
+            <li style="--c:#5d8a00">OOP</li>
+            <li style="--c:#6b4ea3">Data Structures &amp; Algorithms</li>
+            <li style="--c:#ce8129">GUI Development</li>
+            <li style="--c:#2563eb">Event‑Driven Programming</li>
+            <li style="--c:#c14545">MVC Architecture</li>
+          </ul>
+        </div>
+        <div class="stack__col" data-animate="fade">
+          <h3>Tools</h3>
+          <ul>
+            <li style="--c:#7e5fb5">Visual Studio</li>
+            <li style="--c:#fe6395">IntelliJ IDEA</li>
+            <li style="--c:#512BD4">.NET Framework</li>
+            <li style="--c:#68a063">Node.js</li>
+            <li style="--c:#F05032">Git</li>
+            <li style="--c:#03A9F4">Zendesk</li>
+          </ul>
+        </div>
+        <div class="stack__col" data-animate="fade">
+          <h3>Testing &amp; QA</h3>
+          <ul>
+            <li style="--c:#5d8a00">Functional testing</li>
+            <li style="--c:#c14545">Regression testing</li>
+            <li style="--c:#2563eb">Integration testing</li>
+            <li style="--c:#d4a017">Defect tracking</li>
+            <li style="--c:#6b4ea3">QA review</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- CONTACT -->
+    <section class="section section--contact" id="contact">
+      <span class="section__num" data-parallax="-0.06">04 — Contact</span>
+      <h2 class="contact__title">
+        <span class="line" data-animate="line"><span>Have a project</span></span>
+        <span class="line" data-animate="line"><span>in mind? <em>Let's talk.</em></span></span>
+      </h2>
+
+      <a href="mailto:nguyenvangialuan@gmail.com" class="contact__email" data-cursor="link">
+        nguyenvangialuan@gmail.com
+        <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.5" d="M4 16 16 4M7 4h9v9"/></svg>
+      </a>
+
+      <div class="contact__icons" data-animate="fade">
+        <a href="https://www.linkedin.com/in/david-nguyen-7989a3212" class="contact__icon-btn" aria-label="LinkedIn" target="_blank" rel="noopener" data-cursor="link">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+          </svg>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/davng115" class="contact__icon-btn" aria-label="GitHub" target="_blank" rel="noopener" data-cursor="link">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/>
+          </svg>
+          <span>GitHub</span>
+        </a>
+        <a href="https://www.kennesaw.edu" class="contact__icon-btn" aria-label="Kennesaw State University" target="_blank" rel="noopener" data-cursor="link">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/>
+          </svg>
+          <span>KSU</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>© <span id="year">2026</span> David Nguyen. All rights reserved.</div>
+    <div>Built with care · No frameworks.</div>
+  </footer>
+
+  <!-- Floating view & heart widget -->
+  <div class="stats-widget" aria-label="Page stats">
+    <span class="stats-widget__item">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+      <span class="js-view-count">—</span>
+    </span>
+    <button class="stats-widget__item stats-widget__heart js-heart-btn" aria-label="Like this portfolio">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      <span class="js-heart-count">—</span>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <nav>
+      <a href="#work"    class="mobile-menu__link"><span class="mobile-menu__num">01</span><span class="nav__label">Work</span></a>
+      <a href="#about"   class="mobile-menu__link"><span class="mobile-menu__num">02</span><span class="nav__label">About</span></a>
+      <a href="#stack"   class="mobile-menu__link"><span class="mobile-menu__num">03</span><span class="nav__label">Stack</span></a>
+      <a href="#contact" class="mobile-menu__link"><span class="mobile-menu__num">04</span><span class="nav__label">Contact</span></a>
+    </nav>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Photo viewer">
+    <button class="lightbox__close" aria-label="Close" data-cursor="link">&#10005;</button>
+    <button class="lightbox__btn lightbox__btn--prev" aria-label="Previous photo" data-cursor="link">&#8249;</button>
+    <figure class="lightbox__img-wrap">
+      <img class="lightbox__img" src="" alt="" />
+    </figure>
+    <button class="lightbox__btn lightbox__btn--next" aria-label="Next photo" data-cursor="link">&#8250;</button>
+    <div class="lightbox__dots"></div>
+  </div>
+
+  <!-- Firebase -->
+  <script type="module">
+    import { initializeApp }          from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+    import { getDatabase, ref, get, set, increment, onValue }
+      from "https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js";
+
+    const firebaseConfig = {
+      apiKey:            "AIzaSyDh76bENil59o5QCyOS-f6MQOn8t45mLLY",
+      authDomain:        "david-web-portfolio.firebaseapp.com",
+      databaseURL:       "https://david-web-portfolio-default-rtdb.firebaseio.com",
+      projectId:         "david-web-portfolio",
+      storageBucket:     "david-web-portfolio.firebasestorage.app",
+      messagingSenderId: "189498851253",
+      appId:             "1:189498851253:web:505df4f090043401cf63fc",
+      measurementId:     "G-2QRHVL2DBK",
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const db  = getDatabase(app);
+    const statsRef = ref(db, "portfolio/stats");
+
+    // Live-update all counter instances
+    onValue(statsRef, snap => {
+      const data = snap.val() || {};
+      document.querySelectorAll(".js-view-count").forEach(el => el.textContent = (data.views  || 0).toLocaleString());
+      document.querySelectorAll(".js-heart-count").forEach(el => el.textContent = (data.hearts || 0).toLocaleString());
+    });
+
+    // Increment view once per session
+    if (!sessionStorage.getItem("viewed")) {
+      sessionStorage.setItem("viewed", "1");
+      get(statsRef).then(snap => {
+        const data = snap.val() || {};
+        set(statsRef, { views: (data.views || 0) + 1, hearts: data.hearts || 0 });
+      });
+    }
+
+    // Heart buttons — toggleable, syncs all instances
+    if (sessionStorage.getItem("hearted")) {
+      document.querySelectorAll(".js-heart-btn").forEach(btn => btn.classList.add("is-hearted"));
+    }
+
+    document.querySelectorAll(".js-heart-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const alreadyHearted = !!sessionStorage.getItem("hearted");
+        if (alreadyHearted) {
+          // Unheart
+          sessionStorage.removeItem("hearted");
+          document.querySelectorAll(".js-heart-btn").forEach(b => b.classList.remove("is-hearted"));
+          get(statsRef).then(snap => {
+            const data = snap.val() || {};
+            set(statsRef, { views: data.views || 0, hearts: Math.max(0, (data.hearts || 0) - 1) });
+          });
+        } else {
+          // Heart
+          sessionStorage.setItem("hearted", "1");
+          document.querySelectorAll(".js-heart-btn").forEach(b => b.classList.add("is-hearted"));
+          get(statsRef).then(snap => {
+            const data = snap.val() || {};
+            set(statsRef, { views: data.views || 0, hearts: (data.hearts || 0) + 1 });
+          });
+        }
+      });
+    });
+  </script>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
