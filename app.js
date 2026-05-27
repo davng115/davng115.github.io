@@ -277,32 +277,33 @@
       navContact:   "Contact",
       heroLine1:    "Back‑end Developer <em>&amp;</em>",
       heroLine2:    "Quality Assurance",
-      heroLede1:    "I’m <strong>David Nguyen</strong> — a software developer focused on <em>back‑end development, quality assurance, and reliable software systems</em>. I build and test applications using <em>Java, Python</em>, debugging, system integration, and clean object‑oriented design — with a focus on catching <em>edge cases</em> and improving real‑world behavior.",
-      heroLede2:    "I’m also interested in <em>practical AI applications</em>, including machine learning, machine vision, and using AI tools to solve real software problems.",
+      heroLede1:    "I’m <strong>David Nguyen</strong> — a Computer Science graduate from <em>Kennesaw State University</em>, focused on back‑end development, quality assurance, and building reliable software systems. I bring hands‑on experience in Java development, POS system integration, and software testing — treating QA as part of the process, not an afterthought.",
+      heroLede2:    "My background includes diagnosing issues, testing integrations before release, identifying defects, and collaborating with developers to improve production systems. I’m also drawn to <em>practical AI applications</em> — machine learning, machine vision, and using AI to solve real‑world problems.",
       heroCta1:     "See selected work",
       heroCta2:     "Get in touch",
       heroScroll:   "Scroll",
-      workNum:      "01 — Selected Work",
+      workNum:      "02 — Selected Work",
       workTitle:    "Things I’ve <em>built</em> so far.",
       workSub:      "A handful of projects from the last few years. Hover for details.",
-      workDesc1:    `IEEE‑style research on LLM security &amp; defenses — six case studies on phishing detection, scam URL analysis, and secure code generation.<span class="work__meta"><span class="work__meta-row"><b>Role</b> Developer / Documentation Lead</span><span class="work__meta-row"><b>Focus</b> LLM security, AI defenses, secure code generation</span></span>`,
-      workDesc2:    `Interactive Java ordering system with a full GUI — manages customers, orders, payments, receipts, and delivery addresses end‑to‑end.<span class="work__meta"><span class="work__meta-row"><b>Role</b> Developer</span><span class="work__meta-row"><b>Focus</b> Java, OOP, GUI, backend logic, data validation</span></span>`,
-      workDesc3:    `Low‑level programs written in x86 assembly — practical exploration of registers, memory addressing, and control flow at the hardware level.<span class="work__meta"><span class="work__meta-row"><b>Role</b> Developer</span><span class="work__meta-row"><b>Focus</b> x86, low‑level systems, memory, control flow</span></span>`,
-      workDesc4:    `Turn‑based Java console game — player vs. AI dice combat with difficulty scaling, player health, and randomized mechanics.<span class="work__meta"><span class="work__meta-row"><b>Role</b> Developer</span><span class="work__meta-row"><b>Focus</b> Java, OOP, game logic, AI behavior, testing</span></span>`,
-      workDesc5:    `Java coursework game built end‑to‑end — early OOP project focused on class design, encapsulation, and game state management.<span class="work__meta"><span class="work__meta-row"><b>Role</b> Developer</span><span class="work__meta-row"><b>Focus</b> Java, OOP, class design, game state, QA</span></span>`,
-      aboutNum:     "02 — About",
+      workDesc1:    `Full business website for a payment processing company — designed and built from scratch with no frameworks, covering merchant services, agent onboarding, and partner resources.<span class="work__meta"><span class="work__meta-row"><b>Role</b> Designer / Developer</span><span class="work__meta-row"><b>Focus</b> HTML, CSS, JavaScript, UI design, responsive layout</span></span>`,
+      workDesc2:    `IEEE‑style research on LLM security &amp; defenses — six case studies on phishing detection, scam URL analysis, and secure code generation.<span class="work__meta"><span class="work__meta-row"><b>Role</b> Developer / Documentation Lead</span><span class="work__meta-row"><b>Focus</b> LLM security, AI defenses, secure code generation</span></span>`,
+      workDesc3:    `Interactive Java ordering system with a full GUI — manages customers, orders, payments, receipts, and delivery addresses end‑to‑end.<span class="work__meta"><span class="work__meta-row"><b>Role</b> Developer</span><span class="work__meta-row"><b>Focus</b> Java, OOP, GUI, backend logic, data validation</span></span>`,
+      workDesc4:    `Low‑level programs written in x86 assembly — practical exploration of registers, memory addressing, and control flow at the hardware level.<span class="work__meta"><span class="work__meta-row"><b>Role</b> Developer</span><span class="work__meta-row"><b>Focus</b> x86, low‑level systems, memory, control flow</span></span>`,
+      workDesc5:    `Turn‑based Java console game — player vs. AI dice combat with difficulty scaling, player health, and randomized mechanics.<span class="work__meta"><span class="work__meta-row"><b>Role</b> Developer</span><span class="work__meta-row"><b>Focus</b> Java, OOP, game logic, AI behavior, testing</span></span>`,
+      workDesc6:    `Java coursework game built end‑to‑end — early OOP project focused on class design, encapsulation, and game state management.<span class="work__meta"><span class="work__meta-row"><b>Role</b> Developer</span><span class="work__meta-row"><b>Focus</b> Java, OOP, class design, game state, QA</span></span>`,
+      aboutNum:     "01 — About",
       aboutTitle:   "A short <em>introduction</em>.",
       stackNum:     "03 — Stack",
       stackTitle:   "Tools I <em>reach for</em>.",
       contactNum:   "04 — Contact",
       contactLine1: "Have a project",
       contactLine2: "in mind? <em>Let’s talk.</em>",
-      aboutP1:      `<span class="para__gem" aria-hidden="true">◆</span> I’m a Computer Science graduate from <strong>Kennesaw State University</strong> with hands‑on experience in <em>Java application development, quality assurance, POS system integration, and software testing</em>. I treat QA as part of the development process — not an afterthought.`,
-      aboutP2:      `<span class="para__gem" aria-hidden="true">◆</span> My background includes diagnosing software issues, testing integrations before release, identifying defects, and working with developers to improve production software. I enjoy <em>solving problems, building reliable systems</em>, and learning how technology can improve real‑world workflows.`,
+      aboutP1:      `<span class="para__gem" aria-hidden="true">◆</span> I’m a Computer Science graduate from <em>Kennesaw State University</em>, focused on back‑end development, quality assurance, and building reliable software systems. I bring hands‑on experience in Java development, POS system integration, and software testing — treating QA as part of the process, not an afterthought.`,
+      aboutP2:      `<span class="para__gem" aria-hidden="true">◆</span> My background includes diagnosing issues, testing integrations before release, identifying defects, and collaborating with developers to improve production systems. I’m also drawn to <em>practical AI applications</em> — machine learning, machine vision, and using AI to solve real‑world problems.`,
       aboutP3:      `<span class="para__gem" aria-hidden="true">◆</span> Outside of tech, I enjoy traveling, playing pickleball, spending time with family, and exploring <em>AI‑powered trading tools</em>. I’m proactive, team‑oriented, and always looking for ways to learn, improve, and bring positive energy to the people I work with.`,
       factStatus:   "Status",   factStatusVal:  "Open to Software Developer / QA‑focused roles",
       factEdu:      "Edu",      factEduVal:     "B.S. Computer Science · KSU · Honors Scholar · 3.9 GPA",
-      stackTitles:  ["Languages", "Backend & Database", "Concepts", "Tools", "Testing & QA"],
+      stackTitles:  ["Languages", "Backend & Database", "Tools"],
       factFocus:    "Focus",    factFocusVal:   "Back‑end Development · QA · AI · Java · Python",
       factLocation: "Location", factLocationVal:"Atlanta, GA",
     },
@@ -314,32 +315,33 @@
       navContact:   "Liên hệ",
       heroLine1:    "Lập trình viên Back‑end <em>&amp;</em>",
       heroLine2:    "Kiểm thử chất lượng",
-      heroLede1:    "Tôi là <strong>David Nguyen</strong> — lập trình viên phần mềm với chuyên môn về <em>phát triển back‑end, kiểm thử chất lượng và hệ thống phần mềm đáng tin cậy</em>. Tôi xây dựng và kiểm thử ứng dụng bằng <em>Java, Python</em>, gỡ lỗi, tích hợp hệ thống và thiết kế hướng đối tượng — tập trung vào các <em>edge case</em> và cải thiện hành vi ứng dụng thực tế.",
-      heroLede2:    "Tôi cũng quan tâm đến <em>ứng dụng AI thực tế</em>, bao gồm học máy, thị giác máy móc và sử dụng công cụ AI để giải quyết vấn đề phần mềm.",
+      heroLede1:    "Tôi là <strong>David Nguyen</strong> — cử nhân Khoa học Máy tính từ <em>Kennesaw State University</em>, tập trung vào phát triển back‑end, kiểm thử chất lượng và xây dựng hệ thống phần mềm đáng tin cậy. Tôi có kinh nghiệm thực tế về lập trình Java, tích hợp hệ thống POS và kiểm thử phần mềm — xem QA là một phần của quy trình, không phải bước bổ sung.",
+      heroLede2:    "Kinh nghiệm của tôi bao gồm chẩn đoán lỗi, kiểm thử tích hợp trước khi phát hành, xác định defect và cộng tác với lập trình viên để cải thiện hệ thống. Tôi cũng hướng đến <em>ứng dụng AI thực tế</em> — học máy, thị giác máy móc và sử dụng AI để giải quyết vấn đề thực tế.",
       heroCta1:     "Xem dự án",
       heroCta2:     "Liên hệ ngay",
       heroScroll:   "Cuộn xuống",
-      workNum:      "01 — Dự án",
+      workNum:      "02 — Dự án",
       workTitle:    "Những thứ tôi đã <em>xây dựng</em>.",
       workSub:      "Một số dự án trong những năm gần đây. Hover để xem chi tiết.",
-      workDesc1:    `Nghiên cứu theo chuẩn IEEE về bảo mật LLM &amp; phòng thủ — sáu case study về phát hiện phishing, phân tích URL lừa đảo và tạo mã bảo mật.<span class="work__meta"><span class="work__meta-row"><b>Vai trò</b> Lập trình viên / Phụ trách tài liệu</span><span class="work__meta-row"><b>Tập trung</b> Bảo mật LLM, phòng thủ AI, tạo mã bảo mật</span></span>`,
-      workDesc2:    `Hệ thống đặt hàng Java tương tác với giao diện đầy đủ — quản lý khách hàng, đơn hàng, thanh toán, hóa đơn và địa chỉ giao hàng toàn diện.<span class="work__meta"><span class="work__meta-row"><b>Vai trò</b> Lập trình viên</span><span class="work__meta-row"><b>Tập trung</b> Java, OOP, GUI, logic backend, kiểm tra dữ liệu</span></span>`,
-      workDesc3:    `Chương trình cấp thấp viết bằng x86 assembly — khám phá thực tế về thanh ghi, địa chỉ bộ nhớ và luồng điều khiển ở cấp phần cứng.<span class="work__meta"><span class="work__meta-row"><b>Vai trò</b> Lập trình viên</span><span class="work__meta-row"><b>Tập trung</b> x86, hệ thống cấp thấp, bộ nhớ, luồng điều khiển</span></span>`,
-      workDesc4:    `Trò chơi console Java theo lượt — người chơi đấu với AI xúc xắc, có điều chỉnh độ khó, máu người chơi và cơ chế ngẫu nhiên.<span class="work__meta"><span class="work__meta-row"><b>Vai trò</b> Lập trình viên</span><span class="work__meta-row"><b>Tập trung</b> Java, OOP, logic trò chơi, hành vi AI, kiểm thử</span></span>`,
-      workDesc5:    `Trò chơi Java xây dựng từ đầu đến cuối — dự án OOP ban đầu tập trung vào thiết kế lớp, đóng gói và quản lý trạng thái trò chơi.<span class="work__meta"><span class="work__meta-row"><b>Vai trò</b> Lập trình viên</span><span class="work__meta-row"><b>Tập trung</b> Java, OOP, thiết kế lớp, trạng thái trò chơi, QA</span></span>`,
-      aboutNum:     "02 — Giới thiệu",
+      workDesc1:    `Website doanh nghiệp cho công ty xử lý thanh toán — thiết kế và lập trình từ đầu, không dùng framework, bao gồm dịch vụ merchant, onboarding đại lý và tài nguyên đối tác.<span class="work__meta"><span class="work__meta-row"><b>Vai trò</b> Thiết kế / Lập trình viên</span><span class="work__meta-row"><b>Tập trung</b> HTML, CSS, JavaScript, thiết kế UI, responsive layout</span></span>`,
+      workDesc2:    `Nghiên cứu theo chuẩn IEEE về bảo mật LLM &amp; phòng thủ — sáu case study về phát hiện phishing, phân tích URL lừa đảo và tạo mã bảo mật.<span class="work__meta"><span class="work__meta-row"><b>Vai trò</b> Lập trình viên / Phụ trách tài liệu</span><span class="work__meta-row"><b>Tập trung</b> Bảo mật LLM, phòng thủ AI, tạo mã bảo mật</span></span>`,
+      workDesc3:    `Hệ thống đặt hàng Java tương tác với giao diện đầy đủ — quản lý khách hàng, đơn hàng, thanh toán, hóa đơn và địa chỉ giao hàng toàn diện.<span class="work__meta"><span class="work__meta-row"><b>Vai trò</b> Lập trình viên</span><span class="work__meta-row"><b>Tập trung</b> Java, OOP, GUI, logic backend, kiểm tra dữ liệu</span></span>`,
+      workDesc4:    `Chương trình cấp thấp viết bằng x86 assembly — khám phá thực tế về thanh ghi, địa chỉ bộ nhớ và luồng điều khiển ở cấp phần cứng.<span class="work__meta"><span class="work__meta-row"><b>Vai trò</b> Lập trình viên</span><span class="work__meta-row"><b>Tập trung</b> x86, hệ thống cấp thấp, bộ nhớ, luồng điều khiển</span></span>`,
+      workDesc5:    `Trò chơi console Java theo lượt — người chơi đấu với AI xúc xắc, có điều chỉnh độ khó, máu người chơi và cơ chế ngẫu nhiên.<span class="work__meta"><span class="work__meta-row"><b>Vai trò</b> Lập trình viên</span><span class="work__meta-row"><b>Tập trung</b> Java, OOP, logic trò chơi, hành vi AI, kiểm thử</span></span>`,
+      workDesc6:    `Trò chơi Java xây dựng từ đầu đến cuối — dự án OOP ban đầu tập trung vào thiết kế lớp, đóng gói và quản lý trạng thái trò chơi.<span class="work__meta"><span class="work__meta-row"><b>Vai trò</b> Lập trình viên</span><span class="work__meta-row"><b>Tập trung</b> Java, OOP, thiết kế lớp, trạng thái trò chơi, QA</span></span>`,
+      aboutNum:     "01 — Giới thiệu",
       aboutTitle:   "Giới thiệu <em>ngắn gọn</em>.",
       stackNum:     "03 — Công nghệ",
       stackTitle:   "Công cụ tôi <em>hay dùng</em>.",
       contactNum:   "04 — Liên hệ",
       contactLine1: "Có dự án",
       contactLine2: "trong đầu? <em>Hãy nói chuyện.</em>",
-      aboutP1:      `<span class="para__gem" aria-hidden="true">◆</span> Tôi là cử nhân Khoa học Máy tính từ <strong>Kennesaw State University</strong> với kinh nghiệm thực tế về <em>lập trình Java, kiểm thử chất lượng, tích hợp hệ thống POS và kiểm thử phần mềm</em>. Tôi xem QA là một phần của quá trình phát triển — không phải bước bổ sung.`,
-      aboutP2:      `<span class="para__gem" aria-hidden="true">◆</span> Kinh nghiệm của tôi bao gồm chẩn đoán lỗi phần mềm, kiểm thử tích hợp trước khi phát hành, xác định lỗi và làm việc cùng lập trình viên để cải thiện sản phẩm. Tôi thích <em>giải quyết vấn đề, xây dựng hệ thống đáng tin cậy</em> và khám phá cách công nghệ cải thiện quy trình thực tế.`,
+      aboutP1:      `<span class="para__gem" aria-hidden="true">◆</span> Tôi là cử nhân Khoa học Máy tính từ <em>Kennesaw State University</em>, tập trung vào phát triển back‑end, kiểm thử chất lượng và xây dựng hệ thống phần mềm đáng tin cậy. Tôi có kinh nghiệm thực tế về lập trình Java, tích hợp hệ thống POS và kiểm thử phần mềm — xem QA là một phần của quy trình, không phải bước bổ sung.`,
+      aboutP2:      `<span class="para__gem" aria-hidden="true">◆</span> Kinh nghiệm của tôi bao gồm chẩn đoán lỗi, kiểm thử tích hợp trước khi phát hành, xác định defect và cộng tác với lập trình viên để cải thiện hệ thống. Tôi cũng hướng đến <em>ứng dụng AI thực tế</em> — học máy, thị giác máy móc và sử dụng AI để giải quyết vấn đề thực tế.`,
       aboutP3:      `<span class="para__gem" aria-hidden="true">◆</span> Ngoài công việc, tôi thích du lịch, chơi pickleball, dành thời gian cùng gia đình và khám phá <em>công cụ giao dịch AI</em>. Tôi chủ động, làm việc nhóm tốt và luôn tìm cách học hỏi, phát triển và mang lại năng lượng tích cực.`,
       factStatus:   "Trạng thái", factStatusVal:  "Sẵn sàng cho vị trí Lập trình viên / Kiểm thử chất lượng",
       factEdu:      "Học vấn",    factEduVal:     "Cử nhân KHMT · KSU · Sinh viên Danh dự · GPA 3.9",
-      stackTitles:  ["Ngôn ngữ", "Backend & Cơ sở dữ liệu", "Khái niệm", "Công cụ", "Kiểm thử & QA"],
+      stackTitles:  ["Ngôn ngữ", "Backend & Cơ sở dữ liệu", "Công cụ"],
       factFocus:    "Chuyên môn", factFocusVal:   "Back‑end · QA · AI · Java · Python",
       factLocation: "Vị trí",    factLocationVal:"Atlanta, GA",
     },
@@ -375,8 +377,6 @@
       el.textContent = i === 0 ? t.heroCta1 : t.heroCta2;
     });
 
-    // Hero scroll
-    setText($(".hero__scroll-label"), t.heroScroll);
 
     // Stack column titles
     $$(".stack__col h3").forEach((h3, i) => {
@@ -387,21 +387,21 @@
     const workSub = $(".section__sub");
     if (workSub) workSub.textContent = t.workSub;
     const workDescs = $$(".work__desc");
-    [t.workDesc1, t.workDesc2, t.workDesc3, t.workDesc4, t.workDesc5].forEach((html, i) => {
+    [t.workDesc1, t.workDesc2, t.workDesc3, t.workDesc4, t.workDesc5, t.workDesc6].forEach((html, i) => {
       if (workDescs[i]) workDescs[i].innerHTML = html;
     });
 
-    // Section nums (work, about, stack, contact)
+    // Section nums (about, work, stack, contact)
     const nums = $$(".section__num");
-    if (nums[0]) nums[0].textContent = t.workNum;
-    if (nums[1]) nums[1].textContent = t.aboutNum;
+    if (nums[0]) nums[0].textContent = t.aboutNum;
+    if (nums[1]) nums[1].textContent = t.workNum;
     if (nums[2]) nums[2].textContent = t.stackNum;
     if (nums[3]) nums[3].textContent = t.contactNum;
 
-    // Section titles (work, about, stack)
+    // Section titles (about, work, stack)
     const titles = $$(".section__title");
-    if (titles[0]) titles[0].innerHTML = t.workTitle;
-    if (titles[1]) titles[1].innerHTML = t.aboutTitle;
+    if (titles[0]) titles[0].innerHTML = t.aboutTitle;
+    if (titles[1]) titles[1].innerHTML = t.workTitle;
     if (titles[2]) titles[2].innerHTML = t.stackTitle;
 
     // About paragraphs
