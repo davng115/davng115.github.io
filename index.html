@@ -50,8 +50,8 @@
   </aside>
   <!-- Section dot navigator -->
   <nav class="section-nav" aria-label="Section navigation">
-    <a href="#work"    class="section-nav__item" data-section="work"    data-cursor="link"><span class="section-nav__dot"></span><span class="section-nav__label">01 Work</span></a>
-    <a href="#about"   class="section-nav__item" data-section="about"   data-cursor="link"><span class="section-nav__dot"></span><span class="section-nav__label">02 About</span></a>
+    <a href="#about"   class="section-nav__item" data-section="about"   data-cursor="link"><span class="section-nav__dot"></span><span class="section-nav__label">01 About</span></a>
+    <a href="#work"    class="section-nav__item" data-section="work"    data-cursor="link"><span class="section-nav__dot"></span><span class="section-nav__label">02 Work</span></a>
     <a href="#stack"   class="section-nav__item" data-section="stack"   data-cursor="link"><span class="section-nav__dot"></span><span class="section-nav__label">03 Stack</span></a>
     <a href="#contact" class="section-nav__item" data-section="contact" data-cursor="link"><span class="section-nav__dot"></span><span class="section-nav__label">04 Contact</span></a>
   </nav>
@@ -62,8 +62,8 @@
       <span class="nav__logo-text">David Nguyen</span>
     </a>
     <nav class="nav__links" aria-label="Primary">
-      <a href="#work" data-cursor="link"><span class="nav__num">01</span> <span class="nav__label">Work</span></a>
-      <a href="#about" data-cursor="link"><span class="nav__num">02</span> <span class="nav__label">About</span></a>
+      <a href="#about" data-cursor="link"><span class="nav__num">01</span> <span class="nav__label">About</span></a>
+      <a href="#work" data-cursor="link"><span class="nav__num">02</span> <span class="nav__label">Work</span></a>
       <a href="#stack" data-cursor="link"><span class="nav__num">03</span> <span class="nav__label">Stack</span></a>
       <a href="#contact" data-cursor="link"><span class="nav__num">04</span> <span class="nav__label">Contact</span></a>
     </nav>
@@ -110,47 +110,25 @@
           </span>
         </figure>
 
-        <h1 class="hero__title">
-          <span class="line" data-animate="line">
-            <span class="hero__line-inner">Back‑end Developer <em>&amp;</em></span>
-          </span>
-          <span class="line" data-animate="line">
-            <span class="hero__line-inner">Quality Assurance</span>
-          </span>
-        </h1>
-      </div>
-
-      <div class="hero__bottom">
-        <div class="hero__ledes">
-          <p class="hero__lede" data-animate="fade">
-            I'm <strong>David Nguyen</strong> — a software developer focused on
-            <em>back‑end development, quality assurance, and reliable software
-            systems</em>. I build and test applications using <em>Java, Python</em>,
-            debugging, system integration, and clean object‑oriented design — with
-            a focus on catching <em>edge cases</em> and improving real‑world
-            behavior.
-          </p>
-
-          <p class="hero__lede" data-animate="fade">
-            I'm also interested in <em>practical AI applications</em>, including
-            machine learning, machine vision, and using AI tools to solve real
-            software problems.
-          </p>
-        </div>
-
-        <div class="hero__actions" data-animate="fade">
-          <a href="#work" class="btn btn--primary" data-cursor="link">
-            <span class="btn-text">See selected work</span>
-            <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.5" d="M3 11 11 3M5 3h6v6"/></svg>
-          </a>
-          <a href="#contact" class="btn btn--ghost" data-cursor="link"><span class="btn-text">Get in touch</span></a>
+        <div class="hero__headline-right">
+          <h1 class="hero__title">
+            <span class="line" data-animate="line">
+              <span class="hero__line-inner">Back‑end Developer <em>&amp;</em></span>
+            </span>
+            <span class="line" data-animate="line">
+              <span class="hero__line-inner">Quality Assurance</span>
+            </span>
+          </h1>
+          <div class="hero__actions" data-animate="fade">
+            <a href="#work" class="btn btn--primary" data-cursor="link">
+              <span class="btn-text">See selected work</span>
+              <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.5" d="M3 11 11 3M5 3h6v6"/></svg>
+            </a>
+            <a href="#contact" class="btn btn--ghost" data-cursor="link"><span class="btn-text">Get in touch</span></a>
+          </div>
         </div>
       </div>
 
-      <a href="#work" class="hero__scroll" aria-label="Scroll to work" data-cursor="link">
-        <span class="hero__scroll-label">Scroll</span>
-        <span class="hero__scroll-line"></span>
-      </a>
     </section>
 
     <!-- MARQUEE -->
@@ -196,99 +174,10 @@
 
     <div class="section-divider" aria-hidden="true"></div>
 
-    <!-- WORK -->
-    <section class="section" id="work">
-      <header class="section__head" data-parallax="-0.04">
-        <span class="section__num">01 — Selected Work</span>
-        <h2 class="section__title">Things I've <em>built</em> so far.</h2>
-        <p class="section__sub">A handful of projects from the last few years. Hover for details.</p>
-      </header>
-
-      <ul class="work">
-        <li class="work__item" data-animate="row">
-          <a href="https://sites.google.com/view/ys1-generative-ai-and-cyber/home" target="_blank" rel="noopener" class="work__link" data-cursor="view">
-            <span class="work__idx">01</span>
-            <span class="work__name">Generative&nbsp;AI&nbsp;&amp;&nbsp;Cybersecurity</span>
-            <span class="work__tags"><i>Python</i><i>LLMs</i><i>Hugging Face</i></span>
-            <span class="work__year">Fall 2025</span>
-            <span class="work__arrow" aria-hidden="true">↗</span>
-          </a>
-          <p class="work__desc">IEEE‑style research on LLM security &amp; defenses — six case studies on phishing detection, scam URL analysis, and secure code generation.
-            <span class="work__meta">
-              <span class="work__meta-row"><b>Role</b> Developer / Documentation Lead</span>
-              <span class="work__meta-row"><b>Focus</b> LLM security, AI defenses, secure code generation</span>
-            </span>
-          </p>
-        </li>
-        <li class="work__item" data-animate="row">
-          <a href="https://github.com/davng115/Pizza-Online-Ordering" target="_blank" rel="noopener" class="work__link" data-cursor="view">
-            <span class="work__idx">02</span>
-            <span class="work__name">Pizza&nbsp;Online&nbsp;Ordering</span>
-            <span class="work__tags"><i>Java</i><i>GUI</i><i>OOP</i></span>
-            <span class="work__year">Fall 2023</span>
-            <span class="work__arrow" aria-hidden="true">↗</span>
-          </a>
-          <p class="work__desc">Interactive Java ordering system with a full GUI — manages customers, orders, payments, receipts, and delivery addresses end‑to‑end.
-            <span class="work__meta">
-              <span class="work__meta-row"><b>Role</b> Developer</span>
-              <span class="work__meta-row"><b>Focus</b> Java, OOP, GUI, backend logic, data validation</span>
-            </span>
-          </p>
-        </li>
-        <li class="work__item" data-animate="row">
-          <a href="https://github.com/davng115/x86-Assembly-Language-Programming" target="_blank" rel="noopener" class="work__link" data-cursor="view">
-            <span class="work__idx">03</span>
-            <span class="work__name">x86&nbsp;Assembly&nbsp;Programs</span>
-            <span class="work__tags"><i>Assembly</i><i>x86</i><i>Systems</i></span>
-            <span class="work__year">Spring 2023</span>
-            <span class="work__arrow" aria-hidden="true">↗</span>
-          </a>
-          <p class="work__desc">Low‑level programs written in x86 assembly — practical exploration of registers, memory addressing, and control flow at the hardware level.
-            <span class="work__meta">
-              <span class="work__meta-row"><b>Role</b> Developer</span>
-              <span class="work__meta-row"><b>Focus</b> x86, low‑level systems, memory, control flow</span>
-            </span>
-          </p>
-        </li>
-        <li class="work__item" data-animate="row">
-          <a href="https://github.com/davng115/Dice-Battle" target="_blank" rel="noopener" class="work__link" data-cursor="view">
-            <span class="work__idx">04</span>
-            <span class="work__name">Dice&nbsp;Battle&nbsp;Game</span>
-            <span class="work__tags"><i>Java</i><i>OOP</i><i>Console</i></span>
-            <span class="work__year">Fall 2022</span>
-            <span class="work__arrow" aria-hidden="true">↗</span>
-          </a>
-          <p class="work__desc">Turn‑based Java console game — player vs. AI dice combat with difficulty scaling, player health, and randomized mechanics.
-            <span class="work__meta">
-              <span class="work__meta-row"><b>Role</b> Developer</span>
-              <span class="work__meta-row"><b>Focus</b> Java, OOP, game logic, AI behavior, testing</span>
-            </span>
-          </p>
-        </li>
-        <li class="work__item" data-animate="row">
-          <a href="https://github.com/davng115/Game-Project" target="_blank" rel="noopener" class="work__link" data-cursor="view">
-            <span class="work__idx">05</span>
-            <span class="work__name">Game&nbsp;Project</span>
-            <span class="work__tags"><i>Java</i><i>OOP</i><i>Game</i></span>
-            <span class="work__year">Spring 2022</span>
-            <span class="work__arrow" aria-hidden="true">↗</span>
-          </a>
-          <p class="work__desc">Java coursework game built end‑to‑end — early OOP project focused on class design, encapsulation, and game state management.
-            <span class="work__meta">
-              <span class="work__meta-row"><b>Role</b> Developer</span>
-              <span class="work__meta-row"><b>Focus</b> Java, OOP, class design, game state, QA</span>
-            </span>
-          </p>
-        </li>
-      </ul>
-    </section>
-
-    <div class="section-divider" aria-hidden="true"></div>
-
     <!-- ABOUT -->
     <section class="section section--split" id="about">
       <header class="section__head" data-parallax="-0.04">
-        <span class="section__num">02 — About</span>
+        <span class="section__num">01 — About</span>
         <h2 class="section__title">A short <em>introduction</em>.</h2>
       </header>
 
@@ -296,17 +185,19 @@
         <div class="about__body">
           <p data-animate="fade">
             <span class="para__gem" aria-hidden="true">◆</span>
-            I'm a Computer Science graduate from <strong>Kennesaw State University</strong>
-            with hands‑on experience in <em>Java application development, quality
-            assurance, POS system integration, and software testing</em>. I treat QA
-            as part of the development process — not an afterthought.
+            I'm a Computer Science graduate from <em>Kennesaw State University</em>,
+            focused on back‑end development, quality assurance, and building reliable
+            software systems. I bring hands‑on experience in Java development,
+            POS system integration, and software testing — treating QA as part of
+            the process, not an afterthought.
           </p>
           <p data-animate="fade">
             <span class="para__gem" aria-hidden="true">◆</span>
-            My background includes diagnosing software issues, testing integrations
-            before release, identifying defects, and working with developers to improve
-            production software. I enjoy <em>solving problems, building reliable
-            systems</em>, and learning how technology can improve real‑world workflows.
+            My background includes diagnosing issues, testing integrations before
+            release, identifying defects, and collaborating with developers to
+            improve production systems. I'm also drawn to <em>practical AI
+            applications</em> — machine learning, machine vision, and using AI
+            to solve real‑world problems.
           </p>
           <p data-animate="fade">
             <span class="para__gem" aria-hidden="true">◆</span>
@@ -348,6 +239,110 @@
 
     <div class="section-divider" aria-hidden="true"></div>
 
+    <!-- WORK -->
+    <section class="section" id="work">
+      <header class="section__head" data-parallax="-0.04">
+        <span class="section__num">02 — Selected Work</span>
+        <h2 class="section__title">Things I've <em>built</em> so far.</h2>
+        <p class="section__sub">A handful of projects from the last few years. Hover for details.</p>
+      </header>
+
+      <ul class="work">
+        <li class="work__item" data-animate="row">
+          <a href="https://defynevnp.com/index.php" target="_blank" rel="noopener" class="work__link" data-cursor="view">
+            <span class="work__idx">01</span>
+            <span class="work__name">Defyne&nbsp;VN&nbsp;Payments</span>
+            <span class="work__tags"><i>HTML</i><i>CSS</i><i>JavaScript</i></span>
+            <span class="work__year">Spring 2026</span>
+            <span class="work__arrow" aria-hidden="true">↗</span>
+          </a>
+          <p class="work__desc">Full business website for a payment processing company — designed and built from scratch with no frameworks, covering merchant services, agent onboarding, and partner resources.
+            <span class="work__meta">
+              <span class="work__meta-row"><b>Role</b> Designer / Developer</span>
+              <span class="work__meta-row"><b>Focus</b> HTML, CSS, JavaScript, UI design, responsive layout</span>
+            </span>
+          </p>
+        </li>
+        <li class="work__item" data-animate="row">
+          <a href="https://sites.google.com/view/ys1-generative-ai-and-cyber/home" target="_blank" rel="noopener" class="work__link" data-cursor="view">
+            <span class="work__idx">02</span>
+            <span class="work__name">Generative&nbsp;AI&nbsp;&amp;&nbsp;Cybersecurity</span>
+            <span class="work__tags"><i>Python</i><i>LLMs</i><i>Hugging Face</i></span>
+            <span class="work__year">Fall 2025</span>
+            <span class="work__arrow" aria-hidden="true">↗</span>
+          </a>
+          <p class="work__desc">IEEE‑style research on LLM security &amp; defenses — six case studies on phishing detection, scam URL analysis, and secure code generation.
+            <span class="work__meta">
+              <span class="work__meta-row"><b>Role</b> Developer / Documentation Lead</span>
+              <span class="work__meta-row"><b>Focus</b> LLM security, AI defenses, secure code generation</span>
+            </span>
+          </p>
+        </li>
+        <li class="work__item" data-animate="row">
+          <a href="https://github.com/davng115/Pizza-Online-Ordering" target="_blank" rel="noopener" class="work__link" data-cursor="view">
+            <span class="work__idx">03</span>
+            <span class="work__name">Pizza&nbsp;Online&nbsp;Ordering</span>
+            <span class="work__tags"><i>Java</i><i>GUI</i><i>OOP</i></span>
+            <span class="work__year">Fall 2023</span>
+            <span class="work__arrow" aria-hidden="true">↗</span>
+          </a>
+          <p class="work__desc">Interactive Java ordering system with a full GUI — manages customers, orders, payments, receipts, and delivery addresses end‑to‑end.
+            <span class="work__meta">
+              <span class="work__meta-row"><b>Role</b> Developer</span>
+              <span class="work__meta-row"><b>Focus</b> Java, OOP, GUI, backend logic, data validation</span>
+            </span>
+          </p>
+        </li>
+        <li class="work__item" data-animate="row">
+          <a href="https://github.com/davng115/x86-Assembly-Language-Programming" target="_blank" rel="noopener" class="work__link" data-cursor="view">
+            <span class="work__idx">04</span>
+            <span class="work__name">x86&nbsp;Assembly&nbsp;Programs</span>
+            <span class="work__tags"><i>Assembly</i><i>x86</i><i>Systems</i></span>
+            <span class="work__year">Spring 2023</span>
+            <span class="work__arrow" aria-hidden="true">↗</span>
+          </a>
+          <p class="work__desc">Low‑level programs written in x86 assembly — practical exploration of registers, memory addressing, and control flow at the hardware level.
+            <span class="work__meta">
+              <span class="work__meta-row"><b>Role</b> Developer</span>
+              <span class="work__meta-row"><b>Focus</b> x86, low‑level systems, memory, control flow</span>
+            </span>
+          </p>
+        </li>
+        <li class="work__item" data-animate="row">
+          <a href="https://github.com/davng115/Dice-Battle" target="_blank" rel="noopener" class="work__link" data-cursor="view">
+            <span class="work__idx">05</span>
+            <span class="work__name">Dice&nbsp;Battle&nbsp;Game</span>
+            <span class="work__tags"><i>Java</i><i>OOP</i><i>Console</i></span>
+            <span class="work__year">Fall 2022</span>
+            <span class="work__arrow" aria-hidden="true">↗</span>
+          </a>
+          <p class="work__desc">Turn‑based Java console game — player vs. AI dice combat with difficulty scaling, player health, and randomized mechanics.
+            <span class="work__meta">
+              <span class="work__meta-row"><b>Role</b> Developer</span>
+              <span class="work__meta-row"><b>Focus</b> Java, OOP, game logic, AI behavior, testing</span>
+            </span>
+          </p>
+        </li>
+        <li class="work__item" data-animate="row">
+          <a href="https://github.com/davng115/Game-Project" target="_blank" rel="noopener" class="work__link" data-cursor="view">
+            <span class="work__idx">06</span>
+            <span class="work__name">Game&nbsp;Project</span>
+            <span class="work__tags"><i>Java</i><i>OOP</i><i>Game</i></span>
+            <span class="work__year">Spring 2022</span>
+            <span class="work__arrow" aria-hidden="true">↗</span>
+          </a>
+          <p class="work__desc">Java coursework game built end‑to‑end — early OOP project focused on class design, encapsulation, and game state management.
+            <span class="work__meta">
+              <span class="work__meta-row"><b>Role</b> Developer</span>
+              <span class="work__meta-row"><b>Focus</b> Java, OOP, class design, game state, QA</span>
+            </span>
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
     <!-- STACK -->
     <section class="section" id="stack">
       <header class="section__head" data-parallax="-0.04">
@@ -377,16 +372,6 @@
           </ul>
         </div>
         <div class="stack__col" data-animate="fade">
-          <h3>Concepts</h3>
-          <ul>
-            <li style="--c:#5d8a00">OOP</li>
-            <li style="--c:#6b4ea3">Data Structures &amp; Algorithms</li>
-            <li style="--c:#ce8129">GUI Development</li>
-            <li style="--c:#2563eb">Event‑Driven Programming</li>
-            <li style="--c:#c14545">MVC Architecture</li>
-          </ul>
-        </div>
-        <div class="stack__col" data-animate="fade">
           <h3>Tools</h3>
           <ul>
             <li style="--c:#7e5fb5">Visual Studio</li>
@@ -395,16 +380,6 @@
             <li style="--c:#68a063">Node.js</li>
             <li style="--c:#F05032">Git</li>
             <li style="--c:#03A9F4">Zendesk</li>
-          </ul>
-        </div>
-        <div class="stack__col" data-animate="fade">
-          <h3>Testing &amp; QA</h3>
-          <ul>
-            <li style="--c:#5d8a00">Functional testing</li>
-            <li style="--c:#c14545">Regression testing</li>
-            <li style="--c:#2563eb">Integration testing</li>
-            <li style="--c:#d4a017">Defect tracking</li>
-            <li style="--c:#6b4ea3">QA review</li>
           </ul>
         </div>
       </div>
@@ -468,8 +443,8 @@
   <!-- Mobile menu -->
   <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
     <nav>
-      <a href="#work"    class="mobile-menu__link"><span class="mobile-menu__num">01</span><span class="nav__label">Work</span></a>
-      <a href="#about"   class="mobile-menu__link"><span class="mobile-menu__num">02</span><span class="nav__label">About</span></a>
+      <a href="#about"   class="mobile-menu__link"><span class="mobile-menu__num">01</span><span class="nav__label">About</span></a>
+      <a href="#work"    class="mobile-menu__link"><span class="mobile-menu__num">02</span><span class="nav__label">Work</span></a>
       <a href="#stack"   class="mobile-menu__link"><span class="mobile-menu__num">03</span><span class="nav__label">Stack</span></a>
       <a href="#contact" class="mobile-menu__link"><span class="mobile-menu__num">04</span><span class="nav__label">Contact</span></a>
     </nav>
