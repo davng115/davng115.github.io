@@ -870,7 +870,7 @@ main { max-width: var(--container); margin: 0 auto; }
   display: grid;
   grid-template-columns: auto minmax(0, 1fr);
   gap: clamp(24px, 4vw, 56px);
-  align-items: center;
+  align-items: flex-start;
   margin-top: 56px;
 }
 .hero__headline .hero__title { margin: 0; }
